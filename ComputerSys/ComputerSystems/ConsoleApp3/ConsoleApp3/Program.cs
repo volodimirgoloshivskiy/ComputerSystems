@@ -67,11 +67,11 @@ namespace ConsoleApp3
                 bytebuffer = (byte)((b2 & 15) << 2);
                 byte3 = (byte)((b3 & 192) >> 6);
                 byte3 += bytebuffer;
-                temp4 = (byte)(b3 & 63);
+                byte4 = (byte)(b3 & 63);
                 buffer[x * 4] = byte1;//заповнюємо основу нашого файлу
                 buffer[x * 4 + 1] = byte2;
                 buffer[x * 4 + 2] = byte3;
-                buffer[x * 4 + 3] = temp4;
+                buffer[x * 4 + 3] = byte4;
 
             }
 
