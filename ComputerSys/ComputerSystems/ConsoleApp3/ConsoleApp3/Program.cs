@@ -51,7 +51,7 @@ namespace ConsoleApp3
             }
 
             byte b1, b2, b3;
-            byte bytebuffer, byte1, byte2, byte3, temp4;
+            byte bytebuffer, byte1, byte2, byte3, byte4;
             byte[] buffer = new byte[blockCount * 4];
             char[] file64 = new char[blockCount * 4];
 
