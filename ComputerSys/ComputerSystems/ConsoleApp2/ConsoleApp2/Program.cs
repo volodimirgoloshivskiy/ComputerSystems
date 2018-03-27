@@ -13,7 +13,7 @@ namespace ConsoleApp2
         {
             var di = new Dictionary<char, double>();
             int sum = 0;
-            foreach (char c in File.ReadAllText("C:/Users/Zver/Desktop/1.txt"))
+            foreach (char c in File.ReadAllText("C:/Users/Zver/Desktop/3Base64.txt.bz2"))
                 if (di.ContainsKey(c))
                 {
                     di[c]++;
@@ -36,11 +36,11 @@ namespace ConsoleApp2
             {
                 //H = Math.Log(sum / kp.Value, 2);
                 
-                H = H + (double)(kp.Value / sum) * Math.Log(2 , sum / kp.Value);
+                H = H + (double)(kp.Value / sum) * Math.Log( sum / kp.Value,2);
                 m++;
             }
             FileInfo file = new FileInfo("C:/Users/Zver/Desktop/1.txt");
-            Console.WriteLine("H=" + H + "\n" + "m=" + m + "\n" + "full information=" + sum * H+"filesize="+ file.Length);
+            Console.WriteLine("H=" + H + "\n" + "m=" + m + "\n" + "full information=" + sum * H/8+"filesize="+ file.Length);
             Console.ReadKey();
         }
     }
