@@ -72,6 +72,7 @@ namespace ConsoleApp3
                 buffer[x * 4 + 1] = byte2;
                 buffer[x * 4 + 2] = byte3;
                 buffer[x * 4 + 3] = temp4;
+
             }
 
             for (int x = 0; x < blockCount * 4; x++)//трансформуємо

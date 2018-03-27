@@ -5,3 +5,10 @@ C:\Users\Zver\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.csprojR
 C:\Users\Zver\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
 C:\Users\Zver\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.exe
 C:\Users\Zver\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
+C:\Users\Zver\Desktop\ComputerSys\ComputerSystems\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+C:\Users\Zver\Desktop\ComputerSys\ComputerSystems\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Users\Zver\Desktop\ComputerSys\ComputerSystems\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Users\Zver\Desktop\ComputerSys\ComputerSystems\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.csprojResolveAssemblyReference.cache
+C:\Users\Zver\Desktop\ComputerSys\ComputerSystems\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\Zver\Desktop\ComputerSys\ComputerSystems\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+C:\Users\Zver\Desktop\ComputerSys\ComputerSystems\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
