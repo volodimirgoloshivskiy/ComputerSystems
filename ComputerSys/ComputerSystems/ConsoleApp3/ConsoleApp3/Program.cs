@@ -51,7 +51,7 @@ namespace ConsoleApp3
             }
 
             byte b1, b2, b3;
-            byte temp, temp1, temp2, temp3, temp4;
+            byte bytebuffer, byte1, byte2, byte3, temp4;
             byte[] buffer = new byte[blockCount * 4];
             char[] file64 = new char[blockCount * 4];
 
@@ -60,24 +60,18 @@ namespace ConsoleApp3
                 b1 = convertedto64file[x * 3];//беремо значення
                 b2 = convertedto64file[x * 3 + 1];
                 b3 = convertedto64file[x * 3 + 2];
-
-                temp1 = (byte)((b1 & 252) >> 2);//зсовуэмо біти
-
-                temp = (byte)((b1 & 3) << 4);
-                temp2 = (byte)((b2 & 240) >> 4);
-                temp2 += temp;
-
-                temp = (byte)((b2 & 15) << 2);
-                temp3 = (byte)((b3 & 192) >> 6);
-                temp3 += temp;
-
+                byte1 = (byte)((b1 & 252) >> 2);//зсовуэмо біти
+                bytebuffer = (byte)((b1 & 3) << 4);
+                byte2 = (byte)((b2 & 240) >> 4);
+                byte2 += bytebuffer;
+                bytebuffer = (byte)((b2 & 15) << 2);
+                byte3 = (byte)((b3 & 192) >> 6);
+                byte3 += bytebuffer;
                 temp4 = (byte)(b3 & 63);
-
-                buffer[x * 4] = temp1;//заповнюємо основу нашого файлу
-                buffer[x * 4 + 1] = temp2;
-                buffer[x * 4 + 2] = temp3;
+                buffer[x * 4] = byte1;//заповнюємо основу нашого файлу
+                buffer[x * 4 + 1] = byte2;
+                buffer[x * 4 + 2] = byte3;
                 buffer[x * 4 + 3] = temp4;
-
             }
 
             for (int x = 0; x < blockCount * 4; x++)//трансформуємо
